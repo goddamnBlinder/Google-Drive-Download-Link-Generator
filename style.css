@@ -17,6 +17,30 @@
     justify-content: center;
 }
 
-.instructions{
-    font-size: 2rem;
+.instruction{
+    width: 40%;
+    height: 100vh;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: var(--brown);
+    color: #eee;
+}
+.instruction h2{
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 1rem;
+    
+}
+.instruction ol {
+    padding: 0.5rem 0 0 1rem;
+    line-height: 1.5;
+}
+.instruction a {
+    text-decoration: none;
+    color: azure;
+    font-family: cursive;
+    font-variant: small-caps;
+}
+instruction h2::after{
+    content: '';
 }
