@@ -2,7 +2,7 @@
     --brown: #938a81;
     --lightBrown: #cec0b7;
     --choco: #946592;
-    --nash: #a7a159;
+    --natashi: #a7a159;
     --blue: #17ab8c;
     --saint-peters: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
@@ -26,7 +26,7 @@
     color: #eee;
 }
 .instruction h2{
-    font-weight: 400;
+    font-weight: 700;
     position: relative;
     margin-bottom: 1rem;
     
@@ -35,12 +35,19 @@
     padding: 0.5rem 0 0 1rem;
     line-height: 1.5;
 }
-.instruction a {
+.instruction ol a {
     text-decoration: none;
     color: azure;
     font-family: cursive;
     font-variant: small-caps;
 }
-instruction h2::after{
+.instruction  h2::after{
     content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    height: 2px;
+    background-color: #eee;
+    margin-top: 2rem;
 }
