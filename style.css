@@ -1,4 +1,22 @@
+:root {
+    --brown: #938a81;
+    --lightBrown: #cec0b7;
+    --choco: #946592;
+    --nash: #a7a159;
+    --blue: #17ab8c;
+    --saint-peters: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
 *{
     margin: 0;
-    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.instructions{
+    font-size: 2rem;
 }
