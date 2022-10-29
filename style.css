@@ -3,7 +3,6 @@
     --lightBrown: #cec0b7;
     --choco: #946592;
     --natashi: #a7a159;
-    --blue: #17ab8c;
     --saint-peters: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 *{
@@ -11,10 +10,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: cursive;
+    font-variant: small-caps;
+}
 
 .main-container{
     display: flex;
     justify-content: center;
+    background: var(--saint-peters);
 }
 
 .instruction{
@@ -22,8 +26,10 @@
     height: 100vh;
     font-size: 1rem;
     padding: 1rem;
-    background-color: var(--brown);
+    background-color: var(--choco);
     color: #eee;
+    border-radius: 0 1.5rem 1.5rem 0;
+    
 }
 .instruction h2{
     font-weight: 700;
@@ -37,7 +43,7 @@
 }
 .instruction ol a {
     text-decoration: none;
-    color: azure;
+    color: lightskyblue;
     font-family: cursive;
     font-variant: small-caps;
 }
@@ -51,3 +57,37 @@
     background-color: #eee;
     margin-top: 2rem;
 }
+
+.download-link{
+    width: 90%;
+    padding-top: 2rem;
+    padding: 1rem;
+}
+.download-link section{
+    border: 2px solid var(--choco);
+    border-radius: 0 1.5rem 1.5rem 0;
+    padding: auto;
+
+}
+
+main h1{
+ display: block;
+ font-size: 2rem;
+ font-weight: 700;
+ text-align: center;
+ color: var(--brown);
+ padding-bottom: 1rem;
+
+}
+
+main input[ type = radio]{
+    display: none;
+}
+
+main nav{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid var(--natashi);
+    align-items: center;
+}
+
