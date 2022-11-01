@@ -81,7 +81,7 @@ main h1{
 }
 
 main input[ type = radio]{
-    display: none;
+    /* display: none; */
 }
 
 main nav{
@@ -114,8 +114,8 @@ nav .slide {
     width: 29%;
     height: 100%;
     border-radius: 5px;
-    color: #eee;
-    background-color: var(--brown);
+    /* color: #eee; */
+    /* background-color: var(--brown); */
     z-index: 1;
     opacity: 0.6;
     transition: all .3s,;
@@ -140,5 +140,13 @@ nav .slide {
 .contain-3{
     margin: 0 auto;
     padding: 1.2rem;
-    
+
+}
+
+#login:checked ~ nav label.login, 
+#register:checked ~ nav label.register, 
+#reset:checked ~ nav label.reset {
+    color: #ffff;
+    background-color: var(--brown);
+
 }
