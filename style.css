@@ -137,11 +137,6 @@ nav .slide {
     align-items: center;
 }
 
-.contain-3{
-    margin: 0 auto;
-    padding: 1.2rem;
-
-}
 
 #login:checked ~ nav label.login, 
 #register:checked ~ nav label.register, 
@@ -150,3 +145,15 @@ nav .slide {
 
 }
 
+.contain{
+    display: none;
+}
+.content-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#login:checked ~ section, .content-box{
+    display: block;
+}
