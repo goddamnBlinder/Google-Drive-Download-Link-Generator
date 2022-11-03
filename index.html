@@ -37,14 +37,55 @@
         <!-- DOWNLOAD SECTION  -->
         <div class="download-link">
             <div class="container">
-                <h1>Google Direct Download Link</h1>
+                <h1>Google Direct Download Link
+                    Generator</h1>
                 <input type="radio" name="tab" id="login"
                 checked>
                 <input type="radio" name="tab" id="register">
                 <input type="radio" name="tab" id="reset">
                 <nav>
-
+                  <label for="login" class="login">
+                    <i class="fa-solid fa-file-code"></i>
+                    Paste Link
+                  </label>
+                  <label for="login" class="register">
+                    <i class="fa-solid fa-headphones-code"></i>
+                    Embed Audio
+                  </label>
+                  <label for="login" class="reset">
+                    <i class="fa-solid fa-photo-video-code"></i>
+                    Embed Video/Docs
+                  </label>
                 </nav>
+
+                <!-- CONTENT SECTION  -->
+                 <section>
+                    <div class="content content-link">
+                         <i class="fa-solid fa-file-code"></i>
+                        <h2>Google Drive Link</h2>
+                        <p>Paste your Google Drive file 
+                          below </p>
+
+                          <form action="">
+                            <label for="glink">
+                                <i class="fa-solid google-drive-code"></i>
+
+                              <input type="text" placeholder="Google Drive Link" class = "glink" id="glink"
+                              autocomplete="off" required>
+                            </label> 
+                            <button id="btn" class="btn">
+                                Generate Direct Download Link
+                            </button>
+
+                            <div class="embed-code">
+                                <hr>
+                                <h3>Direct Download Link</h3>
+                                <textarea name="" id="download" cols="30" rows="10"></textarea>
+                            </div>
+                          </form>
+
+                    </div>
+                 </section>
             </div>
         </div>
     </section>
