@@ -144,16 +144,15 @@ nav .slide {
     color: var(--choco);
 
 }
-
 .contain{
     display: none;
 }
-.content-box{
+.content-link{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-#login:checked ~ section, .content-box{
+#login:checked ~ section, .content-link{
     display: block;
 }
