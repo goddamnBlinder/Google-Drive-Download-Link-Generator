@@ -10,6 +10,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 body {
     font-family: cursive;
     font-variant: small-caps;
