@@ -67,6 +67,7 @@ body {
 .download-link{
     width: 90%;
     padding-top: 2rem;
+    transition: all .8s ease-in;
     padding: 1rem;
 }
 .download-link section{
@@ -100,13 +101,15 @@ main nav{
     align-items: center;
     position: relative;
     z-index: 1;
+ 
 }
 
 main nav label{
     position: relative;
     cursor: pointer;
-    justify-content: space-between;
+
     padding: .2rem;
+    font-weight: 500;
     
 }
 main nav label i {
@@ -122,7 +125,7 @@ nav .slide {
     border-radius: 5px;
     /* color: #eee; */
     background-color: var(--brown);
-    z-index: 1;
+    z-index: -1;
     opacity: 0.6;
     transition: all .8s;
 
@@ -136,29 +139,27 @@ nav .slide {
     left: 70%;
 }
 
-.content-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
 #login:checked ~ nav label.login, 
 #register:checked ~ nav label.register, 
 #reset:checked ~ nav label.reset {
-    color: var(--choco);
+    color:#eee;
 
 }
-.contain{
+section{
+    transition: all .8s ease-in;
+}
+
+.content{
     display: none;
 }
-.content-link{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+
+#login:checked ~ section .content-link{
+    display: block;
 }
 
-#login:checked ~ section, .content-link{
+#register:checked ~ section .content-audio{
+    display: block;
+}
+#reset:checked ~ section .content-video{
     display: block;
 }
