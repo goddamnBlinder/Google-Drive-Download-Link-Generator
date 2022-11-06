@@ -126,7 +126,7 @@ nav .slide {
     background-color: var(--brown);
     z-index: -1;
     opacity: 0.6;
-    transition: all .3s;
+    transition: all .7s;
 
 }
 
@@ -182,5 +182,27 @@ section{
     text-align: center;
     padding: 0 1rem;
     font-family: inherit;
+    line-height: 1.5;
+    position: relative;
 
+}
+.content p {
+    padding-bottom: 1rem;
+}
+
+.content form{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.content form label {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content form label input{
+    width: 100%;
 }
