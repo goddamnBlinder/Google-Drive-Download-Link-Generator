@@ -35,6 +35,7 @@ body {
     background-color: var(--brown);
     color: #eee;
     border-radius: 0 1.5rem 1.5rem 0;
+    transition: all ease-in .3s;
     
 }
 .instruction h2{
@@ -67,7 +68,6 @@ body {
 .download-link{
     width: 90%;
     padding-top: 2rem;
-    transition: all .8s ease-in;
     padding: 1rem;
 }
 .download-link section{
@@ -88,7 +88,7 @@ main h1{
 }
 
 main input[ type = radio]{
-    /* display: none; */
+    display: none;
 }
 
 main nav{
@@ -123,11 +123,10 @@ nav .slide {
     width: 29%;
     height: 100%;
     border-radius: 5px;
-    /* color: #eee; */
     background-color: var(--brown);
     z-index: -1;
     opacity: 0.6;
-    transition: all .8s;
+    transition: all .3s;
 
 }
 
@@ -146,7 +145,7 @@ nav .slide {
 
 }
 section{
-    transition: all .8s ease-in;
+    transition: all 3s ease-in;
 }
 
 .content{
@@ -162,4 +161,26 @@ section{
 }
 #reset:checked ~ section .content-video{
     display: block;
+}
+
+/* FORM STYLING */
+ section .content{
+  margin:2rem;
+  text-align: center;
+}
+
+.content > i {
+    font-size: 3rem;
+    color: var(--choco);
+    border: none;
+    padding: .3rem;
+    outline: none;
+}
+.content h2{
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0 1rem;
+    font-family: inherit;
+
 }
