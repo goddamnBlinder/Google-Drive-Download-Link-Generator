@@ -175,6 +175,7 @@ section{
     border: none;
     padding: .3rem;
     outline: none;
+
 }
 .content h2{
     font-weight: 500;
@@ -205,4 +206,35 @@ section{
 
 .content form label input{
     width: 100%;
+    display: block;
+    padding: 6px 3px;
+    border-radius: 10px 0 10px 0;
+    margin-bottom: .5rem;
+    outline: none;
+    background-color: rgba(0, 0, 0, .1);
+    color: var(--choco);
+    font-family: inherit;
+    font-variant: inherit;
+    transition: all 5s ease;
+
+}
+
+.content form label input:focus:invalid{
+    font-family: inherit;
+    font-variant: inherit;
+    border: 2px solid crimson;
+}
+.content form label input:focus:valid{
+    font-family: inherit;
+    font-variant: inherit;
+    border: 2px solid limegreen;
+}
+
+.content form i {
+    position: absolute;
+    left:-1.3rem;
+    bottom: 1rem;
+    font-size: 1.4rem;
+    background-color:#276616;
+    color: #c0d37d;
 }
