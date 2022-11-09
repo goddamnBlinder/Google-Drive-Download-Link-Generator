@@ -299,9 +299,12 @@ section{
     position: relative;
     padding: 2px 0;
     transition: all .7s ease;
+    color: var(--brown);
 }
 .embed-code:hover{
-   
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: .8rem .5rem;
 }
 textarea{
     color: var(--choco);
@@ -311,6 +314,20 @@ textarea{
     transition: all .7s ease;
 }
 textarea:hover{
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .2);
     color-scheme: 5;
+}
+.copy{
+    position: absolute;
+    top:11.7rem;
+    right: 8.9rem;
+    border: 2px solid rgba(0, 0, 0, .2) ;
+    padding: 2px;
+    background-color: var(--choco);
+    color: #eee;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+.copy:hover{
+    background: linear-gradient(to right, 35% #);
 }
