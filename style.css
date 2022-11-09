@@ -326,8 +326,8 @@ textarea:hover{
     background-color: var(--choco);
     color: #eee;
     cursor: pointer;
-    transition: all .7s ease;
 }
 .copy:hover{
-    background: linear-gradient(to right, 35% #);
+    background: linear-gradient(180deg, #946592 5%, #845ec2 95%);
+    transition: all 3s ease;
 }
