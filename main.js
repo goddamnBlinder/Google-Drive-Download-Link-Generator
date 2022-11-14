@@ -24,3 +24,13 @@ btn.addEventListener('click', (e) => {
 });
 
 let copied = document.querySelector(".copy");
+copied.addEventListener('click', (e) => {
+       e.preventDefault();
+ downloadLink_textArea.select();
+ downloadLink_textArea.setSelectionRange(0, 999);
+ document.execCommand("copy");
+
+ if( downloadLink_textArea === ''){
+alert("field is Empty");
+ }
+});
