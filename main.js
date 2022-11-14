@@ -17,20 +17,24 @@ btn.addEventListener('click', (e) => {
 
     //    console.log(getDownloadLink);
      downloadLink_textArea.textContent = getDownloadLink;
-
+     
     }
-
-
-});
-
-let copied = document.querySelector(".copy");
-copied.addEventListener('click', (e) => {
-       e.preventDefault();
- downloadLink_textArea.select();
- downloadLink_textArea.setSelectionRange(0, 999);
- document.execCommand("copy");
-
- if( downloadLink_textArea === ''){
-alert("field is Empty");
- }
+    
+    
+    const copied = document.querySelector(".copy");
+    copied.addEventListener('click', (e) => {
+           e.preventDefault();
+     downloadLink_textArea.select();
+     downloadLink_textArea.setSelectionRange(0, 999);
+     document.execCommand("copy");
+    
+     if( downloadLink_textArea.value === ''){
+    alert("field is Empty");
+     }else{
+        copied.style.transition = "0.5 ease"
+        copied.textContent = "COPIED";
+        copied.style.fontVariant = "inherit";
+     }
+    });
+    
 });
