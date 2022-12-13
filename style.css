@@ -107,7 +107,7 @@ main nav{
     border: 2px solid none;
     border-radius: 3px;
     color: var(--choco);
-    padding: 3px;
+    padding: 3.2px;
     align-items: center;
     position: relative;
     z-index: 1;
