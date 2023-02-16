@@ -31,11 +31,13 @@ copied.addEventListener('click', (e) => {
  downloadLink_textArea.setSelectionRange(0, 999);
  document.execCommand("copy");
 
- if( downloadLink_textArea.value === ''){
-alert("field is Empty");
- }else{
+ if( !downloadLink_textArea.value === ''){
     copied.style.transition = "0.5 ease"
     copied.textContent = "COPIED";
     copied.style.fontVariant = "inherit";
+ }else{
+   copied.style.transition = '0.5 ease-in ';
+   copied.textContent = "NOT COPIED";
+   copied.style.fontVariant = "inherit";
  }
 });
