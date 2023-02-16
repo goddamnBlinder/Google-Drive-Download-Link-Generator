@@ -3,43 +3,42 @@ const btn = document.querySelector("#btn");
 const downloadLink_textArea = document.querySelector("#download-link");
 
 btn.addEventListener('click', (e) => {
-      e.preventDefault();
-    //   console.log(glink.value);
+            e.preventDefault();
+         //   console.log(glink.value);
 
-    const glinkValued = glink.value
-    const confirm = glink.value.includes("https://drive.google.com/file/d/");
-    // console.log(glink.value);
+         const glinkValued = glink.value
+         const confirm = glink.value.includes("https://drive.google.com/file/d/");
+         // console.log(glink.value);
 
-    if(confirm == true){
-       var getDownloadLink = glink.value
-       .replace("https://drive.google.com/file/d/", "https://drive.google.com/uc?export=download&id=")
-       .replace("view?usp=share_link", " ");
+         if(confirm == true){
+            var getDownloadLink = glink.value
+            .replace("https://drive.google.com/file/d/", "https://drive.google.com/uc?export=download&id=")
+            .replace("view?usp=share_link", " ");
 
-    //    console.log(getDownloadLink);
-     downloadLink_textArea.textContent = getDownloadLink;
-     
-   }
-    
-    function copyText (target){
-         if (target.value == "") {
-            window.alert("Please generate a download link ")
-         } else {
-            target.select();
-            document.execCommand("copy")
-            window.alert("The Google link is copied to clipboard")
-         }
+            //    console.log(getDownloadLink);
+            downloadLink_textArea.textContent = getDownloadLink;
          
-    }
- 
-    
-   })
-   
-   
-      
-      const copied = document.querySelector(".copy");
-      copied.addEventListener('click', () =>{
-         return copyText(downloadLink_textArea);
-});
+         
+         
+         function copyText (target){
+            if (target.value == "") {
+               alert("Please generate a download link ");
+            } else {
+               target.select();
+               target.setSelectionRange(0, )
+               target.execCommand("copy")
+               alert("The Google link is copied to clipboard");
+            }
+            
+         }
+
+         const copied = document.querySelector(".copy");
+         copied.addEventListener('click', () =>{
+            return copyText(downloadLink_textArea)
+      });
+         
+         
+}
 
 
 
@@ -58,4 +57,4 @@ btn.addEventListener('click', (e) => {
 //    copied.textContent = "NOT COPIED";
 //    copied.style.fontVariant = "inherit";
 //  }
-// });
+// });60
