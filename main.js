@@ -18,26 +18,44 @@ btn.addEventListener('click', (e) => {
     //    console.log(getDownloadLink);
      downloadLink_textArea.textContent = getDownloadLink;
      
+   }
+    
+    function copyText (target){
+         if (target.value == "") {
+            window.alert("Please generate a download link ")
+         } else {
+            target.select();
+            document.execCommand("copy")
+            window.alert("The Google link is copied to clipboard")
+         }
+         
     }
+ 
     
-    
-    
+   })
+   
+   
+      
+      const copied = document.querySelector(".copy");
+      copied.addEventListener('click', () =>{
+         return copyText(downloadLink_textArea);
 });
 
-const copied = document.querySelector(".copy");
-copied.addEventListener('click', (e) => {
-       e.preventDefault();
- downloadLink_textArea.select();
- downloadLink_textArea.setSelectionRange(0, 60);
- document.execCommand("copy");
 
- if( !downloadLink_textArea.value === ''){
-    copied.style.transition = "0.5 ease"
-    copied.textContent = "COPIED";
-    copied.style.fontVariant = "inherit";
- }else{
-   copied.style.transition = '0.5 ease-in ';
-   copied.textContent = "NOT COPIED";
-   copied.style.fontVariant = "inherit";
- }
-});
+
+// copied.addEventListener('click', (e) => {
+//        e.preventDefault();
+//  downloadLink_textArea.select();
+//  downloadLink_textArea.setSelectionRange(0, 60);
+//  document.execCommand("copy");
+
+//  if( !downloadLink_textArea.value === ''){
+//     copied.style.transition = "0.5 ease"
+//     copied.textContent = "COPIED";
+//     copied.style.fontVariant = "inherit";
+//  }else{
+//    copied.style.transition = '0.5 ease-in ';
+//    copied.textContent = "NOT COPIED";
+//    copied.style.fontVariant = "inherit";
+//  }
+// });
