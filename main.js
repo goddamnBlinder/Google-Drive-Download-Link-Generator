@@ -22,12 +22,17 @@ btn.addEventListener('click', (e) => {
          
          function copyText (target){
             if (target.value == "") {
-               alert("Please generate a download link ");
+               copied.style.transition = "0.5 ease ";
+               copied.textContent = "NOT COPIED";
+               copied.style.fontVariant = "inherit";
             } else {
                target.select();
-               target.setSelectionRange(0, )
-               target.execCommand("copy")
-               alert("The Google link is copied to clipboard");
+               target.setSelectionRange(0, 60);
+               target.execCommand("copy");
+               copied.style.transition = "0.5 ease"
+               copied.textContent = "COPIED";
+               copied.style.fontVariant = "inherit";
+               
             }
             
          }
@@ -37,11 +42,12 @@ btn.addEventListener('click', (e) => {
             return copyText(downloadLink_textArea)
       });
          
-         
-}
+   };     
 
 
 
+
+,}
 // copied.addEventListener('click', (e) => {
 //        e.preventDefault();
 //  downloadLink_textArea.select();
@@ -57,4 +63,4 @@ btn.addEventListener('click', (e) => {
 //    copied.textContent = "NOT COPIED";
 //    copied.style.fontVariant = "inherit";
 //  }
-// });60
+// })
