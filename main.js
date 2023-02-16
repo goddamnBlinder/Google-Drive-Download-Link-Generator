@@ -28,7 +28,7 @@ const copied = document.querySelector(".copy");
 copied.addEventListener('click', (e) => {
        e.preventDefault();
  downloadLink_textArea.select();
- downloadLink_textArea.setSelectionRange(0, 999);
+ downloadLink_textArea.setSelectionRange(0, 60);
  document.execCommand("copy");
 
  if( !downloadLink_textArea.value === ''){
